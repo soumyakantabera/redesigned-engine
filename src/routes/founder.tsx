@@ -34,8 +34,10 @@ function FounderCard({ name, title, image, intro, credentials, teaches, promises
 }) {
   return (
     <div className={`grid lg:grid-cols-[1fr_1.3fr] gap-10 items-start ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}>
-      <img src={image} alt={name} loading="lazy" width={1024} height={1024}
-        className="rounded-3xl shadow-xl object-cover h-[420px] w-full border-4 border-cream"/>
+      <div className="relative w-full rounded-3xl shadow-xl border-4 border-cream overflow-hidden" style={{ aspectRatio: "4/5" }}>
+        <img src={image} alt={name} loading="lazy" width={1024} height={1280}
+          className="absolute inset-0 w-full h-full object-cover object-top"/>
+      </div>
       <div>
         <span className="eyebrow eyebrow-indigo"><Icon name="spark" size={12}/> {title}</span>
         <h2 className="mt-3 text-3xl md:text-5xl text-ink leading-[1.05]">{name}</h2>
