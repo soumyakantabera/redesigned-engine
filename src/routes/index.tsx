@@ -106,7 +106,6 @@ function Home() {
             <div className="mt-7 flex flex-wrap gap-3">
               <WaButton message="Hi, I am interested in a free demo. Please guide me." variant="sun" size="lg">🎓 Enroll — Free Demo</WaButton>
               <WaButton message="Hi, I visited your website. Please give me a callback to discuss courses." variant="wa" size="lg">Get a Callback</WaButton>
-              <WaButton message="Hi, I am interested in a free demo. Please guide me." variant="outline" size="lg">Chat on WhatsApp</WaButton>
             </div>
             <div className="mt-8 flex flex-wrap gap-4 text-sm text-white/95">
               {["100% Online · Live", "Flexible Slots: Morning · Evening · Weekend", "Max 6 Per Batch or 1:1", "Easy Monthly Plans", "Reschedule Anytime"].map(s => (
