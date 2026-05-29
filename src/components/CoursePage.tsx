@@ -33,7 +33,6 @@ export type CourseData = {
 
 export function CoursePage({ data }: { data: CourseData }) {
   const waPrimary = `Hi, I am interested in the ${data.title} course. Please share batch details and a free demo slot.`;
-  const waSyllabus = `Hi, can you send me the full syllabus and pricing for ${data.title}?`;
   return (
     <Layout waMessage={waPrimary} footerImage={data.footerImage}>
       {/* HERO */}
@@ -60,7 +59,6 @@ export function CoursePage({ data }: { data: CourseData }) {
             <div className="mt-7 flex flex-wrap gap-3">
               <WaButton message={waPrimary} variant="sun" size="lg">Book a Free Demo</WaButton>
               <WaButton message={`Hi, I am interested in ${data.title}. Please give me a callback.`} variant="wa" size="lg">Get a Callback</WaButton>
-              <WaButton message={waSyllabus} variant="outline" size="lg">Get Full Syllabus</WaButton>
             </div>
           </div>
           <div className="hidden lg:block">
@@ -106,13 +104,6 @@ export function CoursePage({ data }: { data: CourseData }) {
                 </ul>
               </article>
             ))}
-          </div>
-          <div className="mt-8 bg-brand rounded-2xl p-6 md:p-7 flex flex-wrap items-center justify-between gap-4">
-            <div>
-              <strong className="text-cream block text-lg">Want a printable syllabus PDF?</strong>
-              <p className="text-white text-sm mt-1">We'll send it on WhatsApp instantly with batch timings and pricing.</p>
-            </div>
-            <WaButton message={waSyllabus} variant="white">Send Me the Syllabus</WaButton>
           </div>
         </div>
       </section>
@@ -178,7 +169,6 @@ export function CoursePage({ data }: { data: CourseData }) {
           <p className="mt-3 text-white max-w-xl mx-auto">Tell us your goal — we'll set up your free live demo on the next available slot.</p>
           <div className="mt-6 flex flex-wrap gap-3 justify-center">
             <WaButton message={waPrimary} variant="sun" size="lg">🎓 Book Free Demo</WaButton>
-            <WaButton message={waSyllabus} variant="white" size="lg">Get Pricing on WhatsApp</WaButton>
           </div>
         </div>
       </section>
