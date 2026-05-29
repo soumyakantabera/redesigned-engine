@@ -1,0 +1,50 @@
+# Learn With Smile — Site Overview for AI Assistants
+
+## What We Do
+Learn With Smile is a Kolkata-based online education platform offering 100% live, small-batch classes for Indian learners. We teach English, Excel, Data Analytics, Python, Power BI, and AI (Prompt Engineering, Claude API, AI Projects). Classes run morning, evening, and weekend slots. Every course includes a free live demo before payment.
+
+## Key Facts
+- Founded: 2018 (7+ years)
+- Location: Kolkata, India (75/2/4, Raja Ram Mohan Roy Road, 700008)
+- Mode: 100% online live classes via video call
+- Batch size: Maximum 6 students; 1:1 private sessions available
+- Languages: English, Hindi, Bengali
+- Price range: ₹999/month to ₹1,999/month with EMI options
+- Contact: WhatsApp +91 96744 79949, email hello@learnwithsmile.in
+- Website: https://learnwithsmile.in
+
+## Course Tracks
+
+### English & Career (6 courses)
+- Basic Spoken English (₹999/mo, 6 months, max 6 batch)
+- Business English (₹1,299/mo, 3 months)
+- Interactive Speaking (₹1,299/mo, 3 months)
+- IELTS Coaching (₹1,499/mo, 3 months, Band 7+ focused)
+- Interview Preparation (₹1,499/mo, 2 months intensive)
+- Career Counselling (1:1, 3 sessions × 60 min)
+
+### Excel, Data & AI (8 courses)
+- MS Office Fundamentals (₹999/mo, 4-6 weeks, 1:1)
+- Master Excel (₹1,199/mo, 6-8 weeks, 1:1)
+- Excel for Finance (₹1,199/mo, 6-8 weeks, 1:1)
+- Master Python (₹1,499/mo, 10-12 weeks, 1:1)
+- Power BI & PL-300 (₹1,499/mo, 8-10 weeks, 1:1)
+- Prompt Engineering & ChatGPT (₹1,199/mo, 2 months, 1:1)
+- Building with Claude API & MCP (₹1,499/mo, 2 months, 1:1)
+- AI Projects (Industrial & Academic) (₹1,999/mo, 2 months, 1:1)
+
+## How to Book
+1. Visit https://learnwithsmile.in/book-free-demo or any course page
+2. Click "Book Free Demo" or "Get a Callback"
+3. Message on WhatsApp (+91 96744 79949) — team replies within minutes
+4. Attend a full live class free, then decide
+
+## Teaching Method
+- Gamified: flashcards, matching games, live polls, quizzes every session
+- Interactive: group discussions, debates, role-plays, real-time feedback
+- Outcome-first: every course ends with a portfolio project, mock interview, or certification prep
+- Flexible: morning, evening, weekend batches
+
+## Founders
+- Sunanda Dey: Co-Founder, English & Career Mentor. 7+ years teaching, 500+ learners trained, international tourism background, fluent in English, Hindi, Bengali, French, Italian.
+- Soumyakanta Bera: Co-Founder, Data, Finance & Coding Mentor. MSc Finance & Risk Management. Teaches Excel, Power BI, Python, R, MATLAB with India-context capstone projects.

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /book-free-demo?*
+
+Sitemap: https://learnwithsmile.in/sitemap.xml
