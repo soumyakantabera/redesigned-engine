@@ -4,8 +4,8 @@ import { SectionHeader, WaButton } from "@/components/ui-bits";
 import { Icon } from "@/components/Icon";
 import { IMG } from "@/lib/images";
 
-const pageTitle = "Meet the Founders | Sunanda Dey & Soumyakanta Bera";
-const pageDesc = "Meet the founders of Learn With Smile. English & career mentor + data/finance mentor — 100% online live, flexible timings, pan-India.";
+const pageTitle = "Meet the Founder | Sunanda Dey";
+const pageDesc = "Meet the founder of Learn With Smile. English & career mentor — 100% online live, flexible timings, pan-India.";
 const SITE = "https://learnwithsmile.in";
 
 export const Route = createFileRoute("/founder")({
@@ -79,7 +79,7 @@ function Page() {
         <div className="absolute inset-0 z-0"><img src={IMG.teacherWoman} alt="" className="w-full h-full object-cover"/><div className="absolute inset-0 bg-gradient-to-br from-ink/88 via-brand-deep/80 to-indigo-pop/55"/></div>
         <div className="container-x py-16 md:py-24 text-cream max-w-3xl">
           <span className="eyebrow eyebrow-white"><Icon name="heart" size={14}/> Meet the Founders</span>
-          <h1 className="mt-4 text-4xl md:text-6xl text-cream leading-[1.05]">Two mentors. One mission.</h1>
+          <h1 className="mt-4 text-4xl md:text-6xl text-cream leading-[1.05]">One mentor. One mission.</h1>
           <p className="mt-4 text-lg text-white">100% online live classes · flexible morning/evening/weekend slots · max 6 per batch or 1:1 · pan-India, based in Kolkata. Every learner gets two free 1:1 feedback sessions every month.</p>
           <div className="mt-6 flex flex-wrap gap-3">
             <WaButton message="Hi founders, I visited your page. Please give me a callback." variant="sun" size="lg">Get a Callback</WaButton>
@@ -115,40 +115,6 @@ function Page() {
               "Outcomes you can show — not hours sat through",
             ]}
             waMessage="Hi Sunanda, I read your story. I'd like to book a free demo."
-          />
-        </div>
-      </section>
-
-      {/* SOUMYAKANTA */}
-      <section className="section bg-brand-soft/30">
-        <div className="container-x">
-          <FounderCard
-            name="Soumyakanta Bera"
-            title="Educator · Data, Finance & Coding Mentor"
-            image={IMG.founderSoumya}
-            intro="Soumyakanta turned a lifelong hobby — helping the people around him crack data, business and coding problems — into a teaching practice. With a strong academic and applied background in quantitative finance, he now mentors learners through Excel, Power BI, Python, R and MATLAB with India-context projects and real-world workflows."
-            credentials={[
-              "MSc · Finance and Risk Management",
-              "Academic + applied background in data & quant",
-              "Mentor since college — peers, juniors, working professionals",
-              "Builds India-context capstone projects for every course",
-            ]}
-            teaches={[
-              "Master Excel · Excel for Finance",
-              "Power BI (PL-300) · DAX · Modelling",
-              "Python for Data & Automation",
-              "R & RStudio · Statistics",
-              "MATLAB · Numerical Methods · Simulink",
-            ]}
-            promises={[
-              "Concepts broken down to first principles",
-              "Two India-context projects per course — not toy examples",
-              "Honest review of your code, formulas and dashboards",
-              "Career-aligned roadmap, not just lecture hours",
-            ]}
-            waMessage="Hi Soumyakanta, I'd like to book a free demo for Excel / Data / Coding."
-            reverse
-            smallImage
           />
         </div>
       </section>
