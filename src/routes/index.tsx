@@ -232,10 +232,9 @@ function Home() {
           <img src={IMG.graduation} alt="Indian graduates" className="w-full h-full object-cover" loading="lazy"/>
           <div className="absolute inset-0 bg-brand-deep/90"/>
         </div>
-        <div className="container-x grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="container-x grid grid-cols-2 md:grid-cols-4 gap-8">
           <Stat num="7" label="Years Teaching"/>
           <Stat num="500+" label="Learners Helped"/>
-          <Stat num="Affordable" label="Budget-Friendly Plans"/>
           <Stat num="5.0★" label="Average Rating"/>
           <Stat num="100%" label="Completion Rate"/>
         </div>
