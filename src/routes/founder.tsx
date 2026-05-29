@@ -28,13 +28,13 @@ export const Route = createFileRoute("/founder")({
   }),
 });
 
-function FounderCard({ name, title, image, intro, credentials, teaches, promises, waMessage, reverse }: {
+function FounderCard({ name, title, image, intro, credentials, teaches, promises, waMessage, reverse, smallImage }: {
   name: string; title: string; image: string; intro: string;
-  credentials: string[]; teaches: string[]; promises: string[]; waMessage: string; reverse?: boolean;
+  credentials: string[]; teaches: string[]; promises: string[]; waMessage: string; reverse?: boolean; smallImage?: boolean;
 }) {
   return (
     <div className={`grid lg:grid-cols-[1fr_1.3fr] gap-10 items-start ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}>
-      <div className="relative w-full rounded-3xl shadow-xl border-4 border-cream overflow-hidden" style={{ aspectRatio: "4/5" }}>
+      <div className={`relative rounded-3xl shadow-xl border-4 border-cream overflow-hidden ${smallImage ? "w-3/4 mx-auto lg:w-full" : "w-full"}`} style={{ aspectRatio: "4/5" }}>
         <img src={image} alt={name} loading="lazy" width={1024} height={1280}
           className="absolute inset-0 w-full h-full object-cover object-top"/>
       </div>
@@ -124,7 +124,7 @@ function Page() {
         <div className="container-x">
           <FounderCard
             name="Soumyakanta Bera"
-            title="Co-Founder · Data, Finance & Coding Mentor"
+            title="Educator · Data, Finance & Coding Mentor"
             image={IMG.founderSoumya}
             intro="Soumyakanta turned a lifelong hobby — helping the people around him crack data, business and coding problems — into a teaching practice. With a strong academic and applied background in quantitative finance, he now mentors learners through Excel, Power BI, Python, R and MATLAB with India-context projects and real-world workflows."
             credentials={[
@@ -148,6 +148,7 @@ function Page() {
             ]}
             waMessage="Hi Soumyakanta, I'd like to book a free demo for Excel / Data / Coding."
             reverse
+            smallImage
           />
         </div>
       </section>
