@@ -26,20 +26,25 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Configure Pages
-        id: pages
-        uses: actions/configure-pages@v5
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Build client bundle
+        run: npm run build:client
         env:
-          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # base_path is "/" when a custom domain (CNAME) is configured
+          VITE_BASE_PATH: /
 
-      - name: Create 404.html for SPA routing
+      - name: Build SSR bundle
+        run: npm run build:server
+
+      - name: Prerender all routes
+        run: npm run prerender
+
+      - name: Create 404.html fallback
+        # Serves the app shell for any URL that doesn't have a pre-rendered file
         run: cp dist/index.html dist/404.html
 
       - name: Create .nojekyll
@@ -54,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: "github-pages"
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
